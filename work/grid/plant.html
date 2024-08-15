@@ -4,8 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        .grid{
+            display: grid;
+            gap: 10px;
+            justify-content: center;
+            grid-template-areas: 'firstIMG firstIMG'
+                                'secondIMG thirdIMG';
+            float: left;
+            margin-right: 30px;
+            
+        }
+        .grid-item-1{
+            width: 100%;
+            height: 250px;
+            background: url(../img/plants/top-tree04-1.jpg);
+            background-size: cover;
+            background-position: center;
+            grid-area: firstIMG;
+        }
+        .grid-item-2{
+            width: 100%;
+            height: 250px;
+            background: url(../img/plants/top-tree04-1.jpg);
+            background-size: cover;
+            background-position: center;
+           grid-area: secondIMG;
+        }
+        .grid-item-3{
+            width: 100%;
+            height: 250px;
+            background: url(../img/plants/top-tree04-1.jpg);
+            background-size: cover;
+            background-position: center;
+            grid-area: thirdIMG;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <div class="grid">
+            <img src="" alt="" class="grid-item-1">
+            <img src="../img/plants/top-tree04-1.jpg" alt="" class="grid-item-2">
+            <img src="../img/plants/top-tree04-1.jpg" alt="" class="grid-item-3">
+        </div>
+    </div>
     
+    <div>
+        <p><b>ชื่อทางการ :</b></p>
+        <p><b>ชื่อทางวิทยาศาสตร์ :</b><p>
+        <p><b>สกุล :</b></p>
+        <p><b>วงศ์ :</b></p>
+        <p><b>กลุ่มพรรณไม้ :</b></p>
+        <p><b>ลักษณะทางพฤกษศาสตร์ :</b></p>
+        <p><b>สภาพนิเวศ :</b></p>
+        <p><b>สภาพนิเวศวิทยา :</b></p>
+        <p><b>ถิ่นกำเนิด :</b></p>
+        <p><b>การกระจายพันธุ์ :</b></p>
+        <p><b>การปลูกและขยายพันธุ์ :</b></p>
+        <p><b>แหล่งอ้างอิง :</b></p>
+    </div>
 </body>
 </html>
