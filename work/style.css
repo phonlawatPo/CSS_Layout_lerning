@@ -4,12 +4,14 @@
 *{
     margin: 0;
     padding: 0;
-    scroll-behavior:smooth;
-    scroll-margin-top: 100px;
+}
+html{
+    scroll-behavior: smooth;
+    /* scroll-margin-top: 100px; */
 }
 body{
     font-family: 'Kanit',sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 header, ul, li, a{
