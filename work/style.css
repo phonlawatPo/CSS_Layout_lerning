@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior:smooth;
+    scroll-margin-top: 100px;
+}
+body{
+    font-family: 'Kanit',sans-serif;
+    overflow-x: hidden;
+}
+
+header, ul, li, a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+li{
+    list-style: none;
+}
+#menu a {
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    width: auto;
+    height: 70px; 
+    padding: 18px;
+    margin-right: 10px;
+}
+.dropdown-menu .dropdown-content a {
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    width: auto;
+    height: 70px; 
+    padding: 18px;
+    margin-right: 10px;
+}
+a:hover{
+    background-color: aliceblue;
+}
+main{
+    padding: 18px;   
+}
+#top-img{
+    position: relative;
+    margin: 150px 0 150px 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    width: 75%;
+    border-radius: 18px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.topic-main{
+    color: green;
+    margin-top: 100px;
+}
+.topic-second{
+    color: black;
+}
+/* [class*='topic']{
+    margin-top: 20px;
+} */
+.content-box{
+    margin: 50px;
+    padding: 18px;
+}
+#logo{
+    height: 100px;
+    width: auto;
+    margin-left: 18px;
+    margin-right: auto;
+}
+.logo-NR a:hover{
+    background-color: green;
+}
+#content-1 p{
+    color: #252525;
+    text-indent: 2.5em;
+}
+header{
+    position: fixed;
+    z-index: 3;
+    background-color: green;
+    width: 100%;
+}
+nav{
+    margin-left: auto;
+}
+#content-1 img{
+    width: 350px;
+    height: 80%;
+    border-radius: 16px;
+    box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
+}
+#content-1 img:nth-of-type(odd){
+    float: left;
+    margin: 20px;
+}
+#content-1 img:nth-of-type(even){
+    float: right;
+    margin: 20px;
+}
+#content-1 br{
+    clear: both;
+}
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    
+}
+.dropdown-menu .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    right: 20px;
+    z-index: 1;
+    
+}
+/* Dropdown Menu */
+main #flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.flex-item a{
+    display: block;
+    text-align: center;
+}
+.flex-item img{
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    opacity: .8;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+.flex-item a:hover {
+    background-color: white;
+}
+.flex-item img:hover , .grid-item img:hover{
+    width: 180px;
+    height: auto;
+    opacity: 1;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: green;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px , 1fr));
+    place-items: center;
+
+}
+.grid-item , .grid-item a{
+    padding: 8px;
+    display: block;
+    text-align: center;
+}
+.grid-item img{
+    height: auto;
+    width: 150px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+dialog{
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+.open{
+    background-color: white;
+    border: none;
+}
+dialog::backdrop{
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+
+@media (max-width:600px) {
+    body{
+        font-size: 10px;
+    }
+    nav, li{
+        display: none;
+    }
+    .dropdown-menu{
+        position: relative;
+        display: inline-block;
+        margin-left: auto;
+        padding: 18px;
+    }
+    .dropdown-menu img{
+        height: 50px;
+        width: 100%;
+    }
+    .dropdown-menu:hover .dropdown-content{
+        display: block;
+        font-size: 12px;
+        text-align:left;
+    }
+    #content-1{
+        display: inline;
+    }
+    #content-1 img{
+        width: 250px;
+        height: 60%;
+    }
+    #top-img{
+        height: 100%;
+        width: 90vw;
+    }
+}   
