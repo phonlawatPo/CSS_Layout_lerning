@@ -7,7 +7,7 @@
 }
 html{
     scroll-behavior: smooth;
-    /* scroll-margin-top: 100px; */
+    scroll-margin-top: 100px;
 }
 body{
     font-family: 'Kanit',sans-serif;
